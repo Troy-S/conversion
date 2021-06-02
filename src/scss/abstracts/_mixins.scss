@@ -1,35 +1,32 @@
 /**
  * Reusable mixins
  **/
+@mixin fadeInAnimation($anim-dur: 0.7s, $anim-del: 0.7s) {
+    animation-duration: $anim-dur;
+    animation-fill-mode: both;
+    animation-delay: $anim-del;
+    animation-name: fade-in;
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
 
- @mixin fadeInAnimation($anim-dur: 0.7s, $anim-del: 0.7s) {
-     animation-duration: $anim-dur;
-     animation-fill-mode: both;
-     animation-delay: $anim-del;
-     animation-name: fade-in;
-
-     @keyframes fade-in {
-         0% {
-             opacity: 0;
-         }
-
-         100% {
-             opacity: 1;
-         }
-     }
- }
-
+        100% {
+            opacity: 1;
+        }
+    }
+}
 $breakpoints: (
-  'x-small':  ( max-width: 410px ),
-  'small':  ( max-width:   445px ),
-  'medium': ( max-width:   545px ),
-  'large':  ( max-width:   1200px )
-) !default;
-
+    'x-small': (max-width: 410px),
+    'small': (max-width: 445px),
+    'medium': (max-width: 545px),
+    'large': (max-width: 1200px)
+)
+!default;
 @mixin breakpoint($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
         @media #{inspect(map-get($breakpoints, $breakpoint))} {
-          @content;
+            @content;
         }
     }
 }

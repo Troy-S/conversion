@@ -1,5 +1,8 @@
 /**
- * Question 3 - Copy & Paste into console.
+ * Question 3
+ *
+ * 1. Copy & Paste into console
+ * 2. then type into name field & submit
  */
 
 // Grab original form elements
@@ -37,7 +40,7 @@ function splitFullName(fullName) {
 
 // Update name fields
 function updateNameFields() {
-    const [ firstName, lastName ] = splitFullName(document.querySelector('#fullNameField input').value);
+    const [firstName, lastName] = splitFullName(document.querySelector('#fullNameField input').value);
     document.querySelector('#firstNameField input').value = firstName;
     document.querySelector('#lastNameField input').value = lastName;
 }

@@ -5,7 +5,7 @@ function startCountdown(dur, display) {
         secs;
 
     // Holds our countdown
-    const countDown = setInterval(function () {
+    const countDown = setInterval(function() {
         // Parsing values
         mins = parseInt(timer / 60, 10);
         secs = parseInt(timer % 60, 10);
@@ -22,7 +22,7 @@ function startCountdown(dur, display) {
 }
 
 // Onload execute these params..
-window.onload = function () {
+window.onload = function() {
     const twoMins = 60 * 2,
         display = document.querySelector('#timer');
     startCountdown(twoMins, display);

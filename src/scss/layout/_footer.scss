@@ -8,19 +8,15 @@ footer {
     text-align: center;
     margin-bottom: 5px;
     @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 2.2s);
-
     @include breakpoint('medium') {
-      font-size: 8px;
+        font-size: 8px;
     }
-
     @include breakpoint('small') {
-      font-size: 7px;
+        font-size: 7px;
     }
-
     @include breakpoint('small') {
-      font-size: 6px;
+        font-size: 6px;
     }
-
     @media all and (-ms-high-contrast:none) {
         padding-bottom: 13px;
         font-size: 7px;

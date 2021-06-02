@@ -1,5 +1,8 @@
 /**
- * Question 2 - Copy & Paste into console.
+ * Question 2
+ *
+ * 1. Copy & Paste into console.
+ * 2. Select project budget option.
  */
 
 const projectBudget = document.getElementById('input_1_4');

@@ -9,7 +9,7 @@ git clone https://github.com/Troy-S/conversion.git
 ## cd into my project..
 Change directory
 ```
-cd conversion-test
+cd conversion (OR what you've just called the directory)
 ```
 ## Install my project..
 Installation
@@ -46,7 +46,7 @@ npm run eslint-fix
 * HTML5.
 * SASS (SCSS Syntax).
 * es6.
-* Babel.
+* Webpack/Babel.
 
 ### Methodology
 * [BEM Methodology](https://en.bem.info/methodology/)

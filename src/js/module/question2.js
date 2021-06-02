@@ -1,5 +1,5 @@
 /**
- * [Question 2 - Copy & Paste into console.]
+ * Question 2 - Copy & Paste into console.
  */
 
 const projectBudget = document.getElementById('input_1_4');

@@ -1,3 +1,7 @@
+/**
+ * Question 3 - Copy & Paste into console.
+ */
+
 // Grab original form elements
 const lnf = document.querySelector('#lastNameField');
 const fnf = document.querySelector('#firstNameField');

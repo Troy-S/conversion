@@ -7,6 +7,7 @@
      animation-fill-mode: both;
      animation-delay: $anim-del;
      animation-name: fade-in;
+     
      @keyframes fade-in {
          0% {
              opacity: 0;

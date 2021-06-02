@@ -1,5 +1,5 @@
 {
-    "name": "conversion-test",
+    "name": "conversion",
     "version": "1.0.0",
     "description": "Conversion Test by Troy Sheed.",
     "main": "app.js",
@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Troy-S/troy-conversion.git"
+        "url": "git+https://github.com/Troy-S/conversion.git"
     },
     "keywords": [
         "es6",
@@ -25,9 +25,9 @@
     "author": "Troy Sheed",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Troy-S/conversion-test/issues"
+        "url": "https://github.com/Troy-S/conversion/issues"
     },
-    "homepage": "https://github.com/Troy-S/troy-conversion#readme",
+    "homepage": "https://github.com/Troy-S/conversion#readme",
     "devDependencies": {
         "@babel/core": "^7.2.2",
         "@babel/plugin-proposal-class-properties": "^7.3.0",

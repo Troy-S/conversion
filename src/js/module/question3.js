@@ -12,8 +12,8 @@ const fnf = document.querySelector('#firstNameField');
 const nameFieldDisplayStyle = lnf.style.display;
 
 // Hiding original form elements
-lnf.style.display = "none";
-fnf.style.display = "none";
+lnf.style.display = 'none';
+fnf.style.display = 'none';
 
 // insert unified name field
 const fullNameField = lnf.cloneNode(true);

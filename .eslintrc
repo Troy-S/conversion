@@ -10,10 +10,12 @@
         "comma-dangle": 0,
         "consistent-return": "off",
         "eqeqeq": 0,
+        "eol-last": 'off',
         "func-names": ["error", "never"],
         "indent": ["error", 4],
         "linebreak-style": 0,
         "max-len": 'off',
+        "no-alert": "off",
         "no-console": "off",
         "no-lonely-if": 0,
         "no-nested-ternary": "off",
@@ -24,6 +26,7 @@
         "object-curly-newline": 0,
         "prefer-arrow-callback": 0,
         "prefer-template": "off",
+        "space-before-function-paren": "off",
         "no-plusplus": "off"
     }
 }

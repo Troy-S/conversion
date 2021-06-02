@@ -1,0 +1,30 @@
+@mixin timer {
+    .timer {
+        align-items: center;
+        background-color: $white-text-color;
+        box-shadow: 2px 2px 5px $box-shadow;
+        display: flex;
+        flex-direction: column;
+        height: 85px;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: -43px;
+        width: 185px;
+
+        .countdown {
+            font-size: 40px;
+            font-family: Helvetica;
+            color: $orange-timer-color;
+            font-weight: bold;
+        }
+
+        .expiry {
+            font-size: 16px;
+            font-family: Helvetica;
+            color: $expiry-text-color;
+        }
+
+        @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 1s);
+    }
+    @content;
+}

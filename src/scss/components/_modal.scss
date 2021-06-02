@@ -1,0 +1,51 @@
+@mixin modal {
+    .modal {
+        position: relative;
+        height: $modal-height;
+
+        img {
+            height: auto;
+            width: $modal-width;
+            position: absolute;
+            z-index: -1;
+            margin: 0 auto;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-top: 137px;
+            width: $modal-width;
+            height: $modal-height;
+
+            // Added for IE11
+            @media all and (-ms-high-contrast:none) {
+                justify-content: space-around;
+            }
+
+            .subscribe {
+                font-size: 20px;
+                font-weight: 200;
+                font-family: Helvetica;
+                color: $white-text-color;
+                text-align: center;
+                margin-bottom: 10px;
+                @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 1.3s);
+            }
+
+            .email {
+                display: block;
+                width: $email-width;
+                height: 44px;
+                color: $email-text-color;
+                font-size: 20px;
+                font-family: Helvetica;
+                text-align: center;
+                margin: 0 auto;
+                @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 1.6s);
+            }
+        }
+    }
+    @content;
+}

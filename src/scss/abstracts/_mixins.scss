@@ -1,0 +1,19 @@
+/**
+ * Reusable mixins
+ **/
+
+ @mixin fadeInAnimation($anim-dur: 0.7s, $anim-del: 0.7s) {
+     animation-duration: $anim-dur;
+     animation-fill-mode: both;
+     animation-delay: $anim-del;
+     animation-name: fade-in;
+     @keyframes fade-in {
+         0% {
+             opacity: 0;
+         }
+
+         100% {
+             opacity: 1;
+         }
+     }
+ }

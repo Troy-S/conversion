@@ -1,0 +1,19 @@
+/**
+ * Home specific styles
+ * */
+body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+    background-color: $bg-color;
+
+    .container {
+        .cv-lightbox {
+            @include timer;
+            @include modal;
+            @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 0.7s);
+        }
+    }
+}

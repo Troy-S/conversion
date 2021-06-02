@@ -1,0 +1,38 @@
+/**
+ * Button specific styles
+ * */
+ .button {
+     &__discount {
+         display: block;
+         font-size: 20px;
+         background: $discount-gradient;
+         color: $white-text-color;
+         width: $discount-button-width;
+         height: 47px;
+         box-shadow: 0px 2px 2px $box-shadow;
+         border-radius: 3px;
+         text-align: center;
+         margin: 0 auto;
+         margin-bottom: 13px;
+         @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 1.9s);
+
+         &:hover {
+             background: $discount-gradient-hover;
+         }
+     }
+
+     &__close {
+         position: absolute;
+         top: -8px;
+         right: -5px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         background-color: $white-text-color;
+         height: 29px;
+         width: 29px;
+         box-shadow: 1px 2px 3px $box-shadow;
+         @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 1.9s);
+     }
+ }

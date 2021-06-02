@@ -4,7 +4,7 @@
 ## Clone my project..
 Navigate to root of where you store your projects/work
 ```
-git clone https://github.com/Troy-S/troy-conversion.git
+git clone https://github.com/Troy-S/conversion.git
 ```
 ## cd into my project..
 Change directory

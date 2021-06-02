@@ -10,6 +10,7 @@
         margin: 0 auto;
         margin-bottom: -43px;
         width: 185px;
+        z-index: 1;
 
         .countdown {
             font-size: 40px;
@@ -22,6 +23,47 @@
             font-size: 16px;
             font-family: Helvetica;
             color: $expiry-text-color;
+        }
+
+        @include breakpoint('medium') {
+            width: 170px;
+            height: 70px;
+
+            .expiry {
+                font-size: 13px;
+            }
+
+            .countdown {
+                font-size: 30px;
+            }
+        }
+
+        @include breakpoint('small') {
+            width: 140px;
+            height: 70px;
+            margin-bottom: -34px;
+
+            .expiry {
+                font-size: 13px;
+            }
+
+            .countdown {
+                font-size: 30px;
+            }
+        }
+        
+        @include breakpoint('x-small') {
+            width: 130px;
+            height: 60px;
+            margin-bottom: -27px;
+
+            .expiry {
+                font-size: 13px;
+            }
+
+            .countdown {
+                font-size: 30px;
+            }
         }
 
         @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 1s);

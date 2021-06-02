@@ -1,23 +1,17 @@
 @mixin modal {
     .modal {
         position: relative;
-        height: $modal-height;
 
         img {
-            height: auto;
-            width: $modal-width;
-            position: absolute;
-            z-index: -1;
-            margin: 0 auto;
+            width: 100%;
         }
 
         &__content {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            padding-top: 137px;
-            width: $modal-width;
-            height: $modal-height;
+            margin: 0 45px;
+            margin-top: -211px;
 
             // Added for IE11
             @media all and (-ms-high-contrast:none) {
@@ -30,20 +24,64 @@
                 font-family: Helvetica;
                 color: $white-text-color;
                 text-align: center;
-                margin-bottom: 10px;
+                margin-bottom: 25px;
                 @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 1.3s);
+
+                @include breakpoint('medium') {
+                  font-size: 16px;
+                }
+
+                @include breakpoint('small') {
+                  font-size: 14px;
+                  margin-bottom: 18px;
+                }
+
+                @include breakpoint('x-small') {
+                  font-size: 12px;
+                  margin-bottom: 16px;
+                }
             }
 
             .email {
-                display: block;
-                width: $email-width;
-                height: 44px;
+                max-width: $email-width;
+                width: 100%;
+                margin-bottom: 10px;
+                padding: 8px;
                 color: $email-text-color;
                 font-size: 20px;
                 font-family: Helvetica;
                 text-align: center;
                 margin: 0 auto;
+                margin-bottom: 10px;
                 @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 1.6s);
+
+                @include breakpoint('medium') {
+                  font-size: 16px;
+                  padding: 6px;
+                }
+
+                @include breakpoint('small') {
+                  font-size: 14px;
+                  padding: 6px;
+                }
+
+                @include breakpoint('x-small') {
+                  font-size: 12px;
+                  padding: 4px;
+                  margin-bottom: 6px;
+                }
+            }
+
+            @include breakpoint('medium') {
+              margin-top: -176px;
+            }
+
+            @include breakpoint('small') {
+              margin-top: -154px;
+            }
+
+            @include breakpoint('x-small') {
+              margin-top: -133px;
             }
         }
     }

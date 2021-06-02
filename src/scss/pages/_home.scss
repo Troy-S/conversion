@@ -1,7 +1,7 @@
 /**
  * Home specific styles
  * */
-body {
+html {
     align-items: center;
     display: flex;
     height: 100vh;
@@ -11,6 +11,9 @@ body {
 
     .container {
         .cv-lightbox {
+            display: inline-flex;
+            flex-direction: column;
+
             @include timer;
             @include modal;
             @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 0.7s);

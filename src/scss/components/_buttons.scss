@@ -1,20 +1,39 @@
 /**
  * Button specific styles
  * */
+
  .button {
      &__discount {
-         display: block;
          font-size: 20px;
          background: $discount-gradient;
          color: $white-text-color;
          width: $discount-button-width;
-         height: 47px;
          box-shadow: 0px 2px 2px $box-shadow;
          border-radius: 3px;
          text-align: center;
+         padding: 12px;
          margin: 0 auto;
-         margin-bottom: 13px;
+         max-width: 293px;
+         width: 100%;
+         margin-bottom: 25px;
          @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 1.9s);
+
+         @include breakpoint('medium') {
+           font-size: 16px;
+           padding: 6px;
+           max-width: 233px;
+         }
+
+         @include breakpoint('small') {
+           font-size: 12px;
+           padding: 6px;
+           max-width: 233px;
+         }
+
+         @include breakpoint('x-small') {
+           font-size: 10px;
+           padding: 4px;
+         }
 
          &:hover {
              background: $discount-gradient-hover;
@@ -23,8 +42,8 @@
 
      &__close {
          position: absolute;
-         top: -8px;
-         right: -5px;
+         top: -6px;
+         right: -6px;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -34,5 +53,20 @@
          width: 29px;
          box-shadow: 1px 2px 3px $box-shadow;
          @include fadeInAnimation($anim-dur: 0.7s, $anim-del: 1.9s);
+
+         @include breakpoint('medium') {
+             height: 25px;
+             width: 25px;
+         }
+
+         @include breakpoint('small') {
+             height: 22px;
+             width: 22px;
+         }
+
+         @include breakpoint('x-small') {
+             height: 20px;
+             width: 20px;
+         }
      }
  }

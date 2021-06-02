@@ -17,6 +17,14 @@ function startCountdown(dur, display) {
         // If timer reaches 0 clear the setInterval
         if (--timer < 0) {
             clearInterval(countDown);
+
+            const email = document.querySelector('body > div > div > div.modal > div > input');
+            email.style.pointerEvents = 'none';
+            email.style.backgroundColor = '#E5E5E5';
+
+            const discountButton = document.querySelector('body > div > div > div.modal > div > button');
+            discountButton.style.cursor = 'pointer';
+            discountButton.innerText = 'DISCOUNT EXPIRED';
         }
     }, 1000);
 }

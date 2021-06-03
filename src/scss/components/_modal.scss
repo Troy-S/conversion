@@ -63,6 +63,7 @@
                 }
                 @media all and (-ms-high-contrast:none) {
                     justify-content: space-around;
+                    z-index: 1;
                 }
             }
             @include breakpoint('medium') {

@@ -4,6 +4,9 @@
 
         img {
             width: 100%;
+            @media all and (-ms-high-contrast:none) {
+                max-width: $modal-width;
+            }
         }
 
         &__content {

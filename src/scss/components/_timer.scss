@@ -23,6 +23,10 @@
             font-family: Helvetica;
             color: $expiry-text-color;
         }
+        @media all and (-ms-high-contrast:none) {
+            z-index: 1;
+            position: relative;
+        }
         @include breakpoint('medium') {
             width: 170px;
             height: 70px;

@@ -61,6 +61,9 @@
                     padding: 4px;
                     margin-bottom: 6px;
                 }
+                @media all and (-ms-high-contrast:none) {
+                    justify-content: space-around;
+                }
             }
             @include breakpoint('medium') {
                 margin-top: -176px;

@@ -34,6 +34,10 @@
 
         &:hover {
             background: $discount-gradient-hover;
+            cursor: pointer;
+        }
+        @media all and (-ms-high-contrast:none) {
+            z-index: 1;
         }
     }
 

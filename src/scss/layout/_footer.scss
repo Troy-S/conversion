@@ -14,7 +14,7 @@ footer {
     @include breakpoint('small') {
         font-size: 7px;
     }
-    @include breakpoint('small') {
+    @include breakpoint('x-small') {
         font-size: 6px;
     }
     @media all and (-ms-high-contrast:none) {
